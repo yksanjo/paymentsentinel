@@ -37,6 +37,51 @@ PaymentSentinel intercepts every payment instruction from AI agents and validate
 
 If something looks risky, it can hold the transaction for review, block it entirely, or escalate it. It works with major payment networks (ACH, FedNow, RTP, SWIFT) and can integrate with your existing fraud prevention systems.
 
+## How We're Different
+
+### vs. Traditional Fraud Prevention (FICO Falcon, Featurespace)
+
+**What They Do**: Fraud detection for human-initiated transactions, card-based patterns.
+
+**What We Do**: Real-time validation specifically for AI agent transactions.
+
+**Our Advantage**:
+- **Agent-Aware**: We know which AI agent initiated each transaction and their behavior patterns
+- **Real-Time Payment Rails**: Pre-integrated with ACH, FedNow, RTP, SWIFT (they focus on cards)
+- **Sub-50ms Latency**: Fast enough for real-time payments (they're batch-oriented)
+- **AI Agent Patterns**: Understands agent behavior, not just user behavior
+- **Circuit Breakers**: System-wide protection, not just per-transaction
+
+**The Reality**: FICO Falcon is great for credit card fraud. But when an AI agent processes 10,000 payments in 5 minutes, FICO sees "normal transactions." We see "agent velocity anomaly - potential compromise."
+
+### vs. Payment Processor Native Tools (Stripe Radar, Adyen)
+
+**What They Do**: Fraud prevention for their own payment network.
+
+**What We Do**: Vendor-agnostic, works across all payment networks, AI agent-specific.
+
+**Our Advantage**:
+- **Multi-Network**: Works with ACH, FedNow, RTP, SWIFT, not just one processor
+- **Independent**: Not tied to a payment processor, so you're not locked in
+- **AI-Focused**: Built for agent transactions, not retrofitted
+- **Custom Policies**: Banking-specific rules they don't offer
+
+**The Reality**: Stripe Radar protects Stripe payments. We protect ALL your payment rails, regardless of processor.
+
+### vs. Build-It-Yourself
+
+**What They Do**: Internal teams building custom fraud systems.
+
+**What We Do**: Open-source, pre-built integrations, community-maintained.
+
+**Our Advantage**:
+- **Save 12-18 Months**: Don't rebuild payment network integrations
+- **Proven Patterns**: Battle-tested fraud detection, not experimental
+- **Always Updated**: New payment networks? We add support. New fraud patterns? We add detection.
+- **Cost**: Free vs. $500K+ internal development
+
+**The Reality**: You could build this. But payment network integrations are complex. We've already done the hard work.
+
 ## Who This Is For
 
 This is for:
@@ -44,6 +89,7 @@ This is for:
 - **Risk teams** managing payment fraud
 - **Operations teams** handling payment processing
 - **Organizations** deploying AI agents that touch money
+- **Mid-market fintech** who can't afford $500K+ fraud platforms
 
 ## Current Status
 

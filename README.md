@@ -1,63 +1,66 @@
 # PaymentSentinel
 
-> Real-Time Transaction Defense for AI Agents
+> Real-Time Transaction Defense for AI Agent Payments
 
-[![License](https://img.shields.io/badge/license-Proprietary-blue.svg)](LICENSE)
-[![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)](product-specification.md)
+## What This Is
 
-## 🎯 Overview
+PaymentSentinel is an open-source transaction monitoring system that protects payment systems from errors and fraud when AI agents are initiating transactions. It sits between your AI agents and payment networks, validating every transaction before it goes through.
 
-PaymentSentinel is part of the **Agentic AI Security Suite for Financial Institutions** - a comprehensive platform designed to prevent agentic AI financial disruption in 2026.
+## The Current Landscape
 
-## 📚 Documentation
+Payment systems are getting faster. Real-time payments (like FedNow, RTP) settle instantly - there's no going back once a payment is processed. At the same time, companies are starting to let AI agents initiate payments automatically - for customer service, bill pay, treasury management, etc.
 
-- **[Product Specification](product-specification.md)** - Complete product documentation
-- **[Suite Overview](../README_FINANCIAL_INSTITUTIONS.md)** - Full suite documentation for G-SIBs
-- **[Quick Reference](../QUICK_REFERENCE_G-SIBs.md)** - Executive summary
+This creates a new risk: what if an AI agent makes a mistake? Or gets compromised? Or gets tricked into sending money to the wrong place? With real-time payments, you can't just reverse it later. You need to catch problems before they happen.
 
-## 🏦 Target Institutions
+Traditional fraud prevention tools were built for human-initiated transactions. They look for patterns like "user logged in from new location" or "unusual spending amount." But AI agents have different patterns - they might process thousands of transactions quickly, or they might have access to multiple accounts. We need new tools that understand AI agent behavior.
 
-This product is designed for **Global Systemically Important Banks (G-SIBs)**:
+## Why We Built This
 
-- JPMorgan Chase & Co.
-- Morgan Stanley
-- Bank of America
-- Citigroup Inc.
-- Goldman Sachs
-- Wells Fargo
-- U.S. Bancorp
-- Other G-SIBs globally
+We built PaymentSentinel because we saw payment systems and AI agents converging, but the safety tools weren't keeping up. Real-time payments are great for users, but they require real-time protection.
 
-## 🚀 Quick Start
+By open-sourcing this:
+- **Organizations can deploy AI payment features safely** - Knowing transactions are being validated
+- **The community can improve detection** - More use cases means better fraud patterns
+- **Transparency builds trust** - Payment security should be open and auditable
+- **Smaller companies can benefit** - Not everyone can build this from scratch
 
-1. **Review** the [Product Specification](product-specification.md)
-2. **Schedule** an executive briefing
-3. **Request** a technical assessment
-4. **Begin** proof-of-concept discussion
+This is about making AI-powered payments safer, not stopping innovation.
 
-## 💰 Pricing
+## What PaymentSentinel Does
 
-### Starter Edition
-Starting at $75K-200K/year depending on product
+PaymentSentinel intercepts every payment instruction from AI agents and validates it in real-time (under 50ms). It checks:
+- Is this transaction consistent with the customer's history?
+- Is the amount unusual?
+- Is the destination suspicious?
+- Is the AI agent behaving normally?
+- Does this violate any business rules?
 
-### Professional Edition
-Starting at $250K-600K/year
+If something looks risky, it can hold the transaction for review, block it entirely, or escalate it. It works with major payment networks (ACH, FedNow, RTP, SWIFT) and can integrate with your existing fraud prevention systems.
 
-### Enterprise Edition
-$750K-3M/year (custom pricing for G-SIBs)
+## Who This Is For
 
-### PE Portfolio License
-Custom pricing for portfolio-wide deployment
+This is for:
+- **Developers** building AI-powered payment features
+- **Risk teams** managing payment fraud
+- **Operations teams** handling payment processing
+- **Organizations** deploying AI agents that touch money
 
-## 📋 Features
+## Current Status
 
-See [Product Specification](product-specification.md) for complete feature list.
+This is an open-source project in active development. We're building this in public because we believe payment systems need better protection for the AI era.
 
-## 🔗 Related Products
+## Getting Started
 
-This product is part of a 10-product suite:
+1. Check out the [product specification](product-specification.md) for detailed technical information
+2. Review the [Cursor AI prompts](CURSOR_AI_PROMPTS_COMPLETE.md) if you want to build your own version
+3. Read the [executive brief](EXECUTIVE_BRIEF.md) for a high-level overview
+4. Contribute, fork, or use this however it helps you
 
-1. [AgentGuard](../agentguard) - Unified AI Agent Security
+## Related Projects
+
+This is part of a suite of 10 open-source tools for AI agent security in finance:
+
+1. [AgentGuard](../agentguard) - Unified AI Agent Security & Governance
 2. [CodeShield AI](../codeshield-ai) - Secure Development Gateway
 3. [PaymentSentinel](../paymentsentinel) - Real-Time Transaction Defense
 4. [LegacyBridge](../legacybridge-ai-gateway) - Legacy Core Protection
@@ -68,16 +71,25 @@ This product is part of a 10-product suite:
 9. [SupplyChainGuard](../supplychainguard) - Development Tool Security
 10. [ComplianceIQ](../complianceiq) - Regulatory Reporting
 
-## 📞 Contact
+## Contributing
 
-- **Enterprise Sales**: [Contact Information]
-- **Technical Assessment**: [Contact Information]
-- **Regulatory Advisory**: [Contact Information]
+We welcome contributions! Whether it's:
+- Bug reports
+- Feature suggestions
+- Code improvements
+- Documentation fixes
+- New fraud patterns to detect
 
-## 📄 License
+Everything helps make these tools better for everyone.
 
-Proprietary - Enterprise License Required
+## License
+
+MIT License - Use it however you want.
+
+## Disclaimer
+
+This is open-source software provided as-is. Use at your own risk. We're not responsible for any losses or damages. This is a community project, not a commercial product.
 
 ---
 
-**Part of the Agentic AI Security Suite - Purpose-Built for G-SIBs**
+**Built with the hope that open collaboration can make AI-powered payments safer for everyone.**

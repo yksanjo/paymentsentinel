@@ -2,6 +2,8 @@
 
 > Real-Time Transaction Defense for AI Agent Payments
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![GitHub stars](https://img.shields.io/github/stars/yksanjo/paymentsentinel?style=social)](https://github.com/yksanjo/paymentsentinel/stargazers) [![GitHub forks](https://img.shields.io/github/forks/yksanjo/paymentsentinel.svg)](https://github.com/yksanjo/paymentsentinel/network/members) [![GitHub issues](https://img.shields.io/github/issues/yksanjo/paymentsentinel.svg)](https://github.com/yksanjo/paymentsentinel/issues) [![Last commit](https://img.shields.io/github/last-commit/yksanjo/paymentsentinel.svg)](https://github.com/yksanjo/paymentsentinel/commits/main)
+
 ## What This Is
 
 PaymentSentinel is an open-source transaction monitoring system that protects payment systems from errors and fraud when AI agents are initiating transactions. It sits between your AI agents and payment networks, validating every transaction before it goes through.

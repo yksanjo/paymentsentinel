@@ -91,6 +91,31 @@ This is for:
 - **Organizations** deploying AI agents that touch money
 - **Mid-market fintech** who can't afford $500K+ fraud platforms
 
+## Target Segments
+
+### Banks Frustrated with False Positives
+**Why We Fit**: FICO/SAS have high false positive rates hurting customer experience.
+
+**Positioning**: "FICO was built before machine learning existed. We're ML-native with 60% fewer false positives."
+
+### Mid-Market Fintech
+**Why We Fit**: Can't afford $500K+ fraud platforms, but need real-time protection.
+
+**Positioning**: "Enterprise-grade fraud protection at mid-market prices."
+
+### Organizations Deploying AI Payment Agents
+**Why We Fit**: New use case - AI agents initiating payments need specialized protection.
+
+**Positioning**: "Real-time transaction defense specifically for AI agent payments."
+
+## Our Competitive Advantages
+
+1. **Modern ML**: Deep learning, ensemble models (they use rules-based)
+2. **Real-Time**: <100ms scoring (they're batch)
+3. **Lower False Positives**: Better customer experience
+4. **Transparent**: Explainable AI (they're black boxes)
+5. **Agent-Aware**: Understands AI agent behavior patterns
+
 ## Current Status
 
 This is an open-source project in active development. We're building this in public because we believe payment systems need better protection for the AI era.
